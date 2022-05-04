@@ -15,3 +15,14 @@ let lastOperation = '';
 let haveDot = false;
 
 //Event Listeners
+numbers.forEach(number =>{
+    number.addEventListener('click', (e)=> {
+        if (e.target.innerText === '.' && !haveDot) {
+            haveDot = true;
+        }else if (e.target.innerText === '.' && haveDot){
+            return;
+        }
+        dis2Num += e.target.innerText;
+        display2.innerText = dis2Num;
+    })
+})
