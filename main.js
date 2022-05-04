@@ -14,7 +14,7 @@ let result = null;
 let lastOperation = '';
 let haveDot = false;
 
-//Event Listeners
+//Event Listeners to enable numbers to be added to screen when added clicked on the calculator
 numbers.forEach(number =>{
     number.addEventListener('click', (e)=> {
         if (e.target.innerText === '.' && !haveDot) {
@@ -26,3 +26,5 @@ numbers.forEach(number =>{
         display2.innerText = dis2Num;
     })
 })
+
+//Mathematical operators -+*%/
