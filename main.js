@@ -1,3 +1,4 @@
+//Constants
 const display1 = document.querySelector('.display1');
 const display2 = document.querySelector('.display2');
 const temp_Result = document.querySelector('.temp-result');
@@ -82,7 +83,7 @@ equal.addEventListener('click', (e)=>{
 });
 
 clearAll.addEventListener('click', (e)=>{
-    display1.innerText = 'Please Calculate Something';
+    display1.innerText = 'Please do some calculations, Enjoy.';
     display2.innerText = '';
     display_1_Num = '';
     display_2_Num = '';
